@@ -7,36 +7,129 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B48826D12762573D0008BCB1 /* Yubico_BrowserApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48826D02762573D0008BCB1 /* Yubico_BrowserApp.swift */; };
-		B48826D32762573D0008BCB1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48826D22762573D0008BCB1 /* ContentView.swift */; };
+		B478E87E27627F7000410E84 /* YubiKeyConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B478E87D27627F7000410E84 /* YubiKeyConnection.swift */; };
+		B478E8802762A5F100410E84 /* SecCertificate+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B478E87F2762A5F100410E84 /* SecCertificate+Extensions.swift */; };
+		B478E8882762A70200410E84 /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B478E8872762A70200410E84 /* Data+Extensions.swift */; };
+		B478E88B2763548A00410E84 /* TokenCertificateStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B478E88A2763548A00410E84 /* TokenCertificateStorage.swift */; };
+		B478E89127635FE800410E84 /* CryptoTokenKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B478E8852762A66400410E84 /* CryptoTokenKit.framework */; };
+		B478E89427635FE800410E84 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = B478E89327635FE800410E84 /* Token.swift */; };
+		B478E89627635FE800410E84 /* TokenDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B478E89527635FE800410E84 /* TokenDriver.swift */; };
+		B478E89827635FE800410E84 /* TokenSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = B478E89727635FE800410E84 /* TokenSession.swift */; };
+		B478E89C27635FE800410E84 /* TokenExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B478E89027635FE800410E84 /* TokenExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B48826D12762573D0008BCB1 /* YubicoBrowserApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48826D02762573D0008BCB1 /* YubicoBrowserApp.swift */; };
+		B48826D32762573D0008BCB1 /* BrowserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48826D22762573D0008BCB1 /* BrowserView.swift */; };
 		B48826D52762573E0008BCB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B48826D42762573E0008BCB1 /* Assets.xcassets */; };
 		B48826D82762573E0008BCB1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B48826D72762573E0008BCB1 /* Preview Assets.xcassets */; };
+		B48826DF276261070008BCB1 /* CertificatesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48826DE276261070008BCB1 /* CertificatesView.swift */; };
+		B48826E1276274070008BCB1 /* CertificatesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48826E0276274070008BCB1 /* CertificatesModel.swift */; };
+		B48826E427627A730008BCB1 /* YubiKit in Frameworks */ = {isa = PBXBuildFile; productRef = B48826E327627A730008BCB1 /* YubiKit */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		B478E89A27635FE800410E84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B48826C52762573D0008BCB1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B478E88F27635FE800410E84;
+			remoteInfo = TokenExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B478E8A027635FE800410E84 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B478E89C27635FE800410E84 /* TokenExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		B478E87C27627C8B00410E84 /* Yubico-Browser-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Yubico-Browser-Info.plist"; sourceTree = SOURCE_ROOT; };
+		B478E87D27627F7000410E84 /* YubiKeyConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YubiKeyConnection.swift; sourceTree = "<group>"; };
+		B478E87F2762A5F100410E84 /* SecCertificate+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SecCertificate+Extensions.swift"; sourceTree = "<group>"; };
+		B478E8822762A64100410E84 /* CryptoKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoKit.framework; path = System/Library/Frameworks/CryptoKit.framework; sourceTree = SDKROOT; };
+		B478E8852762A66400410E84 /* CryptoTokenKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoTokenKit.framework; path = System/Library/Frameworks/CryptoTokenKit.framework; sourceTree = SDKROOT; };
+		B478E8872762A70200410E84 /* Data+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extensions.swift"; sourceTree = "<group>"; };
+		B478E88A2763548A00410E84 /* TokenCertificateStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenCertificateStorage.swift; sourceTree = "<group>"; };
+		B478E89027635FE800410E84 /* TokenExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TokenExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B478E89327635FE800410E84 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		B478E89527635FE800410E84 /* TokenDriver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenDriver.swift; sourceTree = "<group>"; };
+		B478E89727635FE800410E84 /* TokenSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenSession.swift; sourceTree = "<group>"; };
+		B478E89927635FE800410E84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B478E8A12763638E00410E84 /* TokenExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TokenExtension.entitlements; sourceTree = "<group>"; };
 		B48826CD2762573D0008BCB1 /* Yubico Browser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Yubico Browser.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B48826D02762573D0008BCB1 /* Yubico_BrowserApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yubico_BrowserApp.swift; sourceTree = "<group>"; };
-		B48826D22762573D0008BCB1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B48826D02762573D0008BCB1 /* YubicoBrowserApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YubicoBrowserApp.swift; sourceTree = "<group>"; };
+		B48826D22762573D0008BCB1 /* BrowserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserView.swift; sourceTree = "<group>"; };
 		B48826D42762573E0008BCB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B48826D72762573E0008BCB1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B48826DE276261070008BCB1 /* CertificatesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificatesView.swift; sourceTree = "<group>"; };
+		B48826E0276274070008BCB1 /* CertificatesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificatesModel.swift; sourceTree = "<group>"; };
+		B48826E527627A960008BCB1 /* Yubico Browser.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Yubico Browser.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B478E88D27635FE800410E84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B478E89127635FE800410E84 /* CryptoTokenKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B48826CA2762573D0008BCB1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B48826E427627A730008BCB1 /* YubiKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B478E8812762A64100410E84 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B478E8852762A66400410E84 /* CryptoTokenKit.framework */,
+				B478E8822762A64100410E84 /* CryptoKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B478E8892762A7B800410E84 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B478E87F2762A5F100410E84 /* SecCertificate+Extensions.swift */,
+				B478E8872762A70200410E84 /* Data+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B478E89227635FE800410E84 /* TokenExtension */ = {
+			isa = PBXGroup;
+			children = (
+				B478E8A12763638E00410E84 /* TokenExtension.entitlements */,
+				B478E89327635FE800410E84 /* Token.swift */,
+				B478E89527635FE800410E84 /* TokenDriver.swift */,
+				B478E89727635FE800410E84 /* TokenSession.swift */,
+				B478E89927635FE800410E84 /* Info.plist */,
+			);
+			path = TokenExtension;
+			sourceTree = "<group>";
+		};
 		B48826C42762573D0008BCB1 = {
 			isa = PBXGroup;
 			children = (
 				B48826CF2762573D0008BCB1 /* Yubico Browser */,
+				B478E89227635FE800410E84 /* TokenExtension */,
 				B48826CE2762573D0008BCB1 /* Products */,
+				B478E8812762A64100410E84 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -44,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				B48826CD2762573D0008BCB1 /* Yubico Browser.app */,
+				B478E89027635FE800410E84 /* TokenExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,9 +145,16 @@
 		B48826CF2762573D0008BCB1 /* Yubico Browser */ = {
 			isa = PBXGroup;
 			children = (
-				B48826D02762573D0008BCB1 /* Yubico_BrowserApp.swift */,
-				B48826D22762573D0008BCB1 /* ContentView.swift */,
 				B48826D42762573E0008BCB1 /* Assets.xcassets */,
+				B478E87C27627C8B00410E84 /* Yubico-Browser-Info.plist */,
+				B48826E527627A960008BCB1 /* Yubico Browser.entitlements */,
+				B48826D02762573D0008BCB1 /* YubicoBrowserApp.swift */,
+				B48826D22762573D0008BCB1 /* BrowserView.swift */,
+				B48826DE276261070008BCB1 /* CertificatesView.swift */,
+				B48826E0276274070008BCB1 /* CertificatesModel.swift */,
+				B478E87D27627F7000410E84 /* YubiKeyConnection.swift */,
+				B478E88A2763548A00410E84 /* TokenCertificateStorage.swift */,
+				B478E8892762A7B800410E84 /* Extensions */,
 				B48826D62762573E0008BCB1 /* Preview Content */,
 			);
 			path = "Yubico Browser";
@@ -70,6 +171,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B478E88F27635FE800410E84 /* TokenExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B478E89D27635FE800410E84 /* Build configuration list for PBXNativeTarget "TokenExtension" */;
+			buildPhases = (
+				B478E88C27635FE800410E84 /* Sources */,
+				B478E88D27635FE800410E84 /* Frameworks */,
+				B478E88E27635FE800410E84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TokenExtension;
+			productName = TokenExtension;
+			productReference = B478E89027635FE800410E84 /* TokenExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		B48826CC2762573D0008BCB1 /* Yubico Browser */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B48826DB2762573E0008BCB1 /* Build configuration list for PBXNativeTarget "Yubico Browser" */;
@@ -77,12 +195,17 @@
 				B48826C92762573D0008BCB1 /* Sources */,
 				B48826CA2762573D0008BCB1 /* Frameworks */,
 				B48826CB2762573D0008BCB1 /* Resources */,
+				B478E8A027635FE800410E84 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B478E89B27635FE800410E84 /* PBXTargetDependency */,
 			);
 			name = "Yubico Browser";
+			packageProductDependencies = (
+				B48826E327627A730008BCB1 /* YubiKit */,
+			);
 			productName = "Yubico Browser";
 			productReference = B48826CD2762573D0008BCB1 /* Yubico Browser.app */;
 			productType = "com.apple.product-type.application";
@@ -94,9 +217,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1310;
+				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1310;
 				TargetAttributes = {
+					B478E88F27635FE800410E84 = {
+						CreatedOnToolsVersion = 13.2;
+					};
 					B48826CC2762573D0008BCB1 = {
 						CreatedOnToolsVersion = 13.1;
 					};
@@ -111,16 +237,27 @@
 				Base,
 			);
 			mainGroup = B48826C42762573D0008BCB1;
+			packageReferences = (
+				B48826E227627A730008BCB1 /* XCRemoteSwiftPackageReference "yubikit-ios" */,
+			);
 			productRefGroup = B48826CE2762573D0008BCB1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				B48826CC2762573D0008BCB1 /* Yubico Browser */,
+				B478E88F27635FE800410E84 /* TokenExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B478E88E27635FE800410E84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B48826CB2762573D0008BCB1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -133,18 +270,96 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B478E88C27635FE800410E84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B478E89827635FE800410E84 /* TokenSession.swift in Sources */,
+				B478E89427635FE800410E84 /* Token.swift in Sources */,
+				B478E89627635FE800410E84 /* TokenDriver.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B48826C92762573D0008BCB1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B48826D32762573D0008BCB1 /* ContentView.swift in Sources */,
-				B48826D12762573D0008BCB1 /* Yubico_BrowserApp.swift in Sources */,
+				B478E87E27627F7000410E84 /* YubiKeyConnection.swift in Sources */,
+				B478E88B2763548A00410E84 /* TokenCertificateStorage.swift in Sources */,
+				B478E8882762A70200410E84 /* Data+Extensions.swift in Sources */,
+				B48826D32762573D0008BCB1 /* BrowserView.swift in Sources */,
+				B48826E1276274070008BCB1 /* CertificatesModel.swift in Sources */,
+				B48826DF276261070008BCB1 /* CertificatesView.swift in Sources */,
+				B48826D12762573D0008BCB1 /* YubicoBrowserApp.swift in Sources */,
+				B478E8802762A5F100410E84 /* SecCertificate+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		B478E89B27635FE800410E84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B478E88F27635FE800410E84 /* TokenExtension */;
+			targetProxy = B478E89A27635FE800410E84 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		B478E89E27635FE800410E84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = TokenExtension/TokenExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LQA3CS5MM7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TokenExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TokenExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yubico.Yubico-Browser.TokenExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B478E89F27635FE800410E84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = TokenExtension/TokenExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LQA3CS5MM7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TokenExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TokenExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yubico.Yubico-Browser.TokenExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 		B48826D92762573E0008BCB1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -196,6 +411,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -251,6 +467,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -264,19 +481,25 @@
 		B48826DC2762573E0008BCB1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Yubico Browser/Yubico Browser.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Yubico Browser/Preview Content\"";
 				DEVELOPMENT_TEAM = LQA3CS5MM7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Yubico-Browser-Info.plist";
+				INFOPLIST_KEY_NFCReaderUsageDescription = "Communicate with your YubiKey";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -286,26 +509,32 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		B48826DD2762573E0008BCB1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Yubico Browser/Yubico Browser.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Yubico Browser/Preview Content\"";
 				DEVELOPMENT_TEAM = LQA3CS5MM7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Yubico-Browser-Info.plist";
+				INFOPLIST_KEY_NFCReaderUsageDescription = "Communicate with your YubiKey";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,13 +544,22 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B478E89D27635FE800410E84 /* Build configuration list for PBXNativeTarget "TokenExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B478E89E27635FE800410E84 /* Debug */,
+				B478E89F27635FE800410E84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B48826C82762573D0008BCB1 /* Build configuration list for PBXProject "Yubico Browser" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -341,6 +579,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B48826E227627A730008BCB1 /* XCRemoteSwiftPackageReference "yubikit-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Yubico/yubikit-ios";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B48826E327627A730008BCB1 /* YubiKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B48826E227627A730008BCB1 /* XCRemoteSwiftPackageReference "yubikit-ios" */;
+			productName = YubiKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B48826C52762573D0008BCB1 /* Project object */;
 }
