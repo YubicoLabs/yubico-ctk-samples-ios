@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B417C731279566E700753BC5 /* WebNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B417C730279566E700753BC5 /* WebNavigationView.swift */; };
 		B42BC1EE2763BA2900216109 /* BrowserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42BC1ED2763BA2900216109 /* BrowserModel.swift */; };
 		B478E87E27627F7000410E84 /* YubiKeyConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B478E87D27627F7000410E84 /* YubiKeyConnection.swift */; };
 		B478E8802762A5F100410E84 /* SecCertificate+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B478E87F2762A5F100410E84 /* SecCertificate+Extensions.swift */; };
@@ -93,6 +94,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B417C730279566E700753BC5 /* WebNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebNavigationView.swift; sourceTree = "<group>"; };
 		B42BC1ED2763BA2900216109 /* BrowserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserModel.swift; sourceTree = "<group>"; };
 		B478E87C27627C8B00410E84 /* Yubico-Browser-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Yubico-Browser-Info.plist"; sourceTree = SOURCE_ROOT; };
 		B478E87D27627F7000410E84 /* YubiKeyConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YubiKeyConnection.swift; sourceTree = "<group>"; };
@@ -306,6 +308,7 @@
 				B48826E0276274070008BCB1 /* CertificatesModel.swift */,
 				B478E87D27627F7000410E84 /* YubiKeyConnection.swift */,
 				B478E88A2763548A00410E84 /* TokenCertificateStorage.swift */,
+				B417C730279566E700753BC5 /* WebNavigationView.swift */,
 				B478E8892762A7B800410E84 /* Extensions */,
 				B48826D62762573E0008BCB1 /* Preview Content */,
 			);
@@ -768,6 +771,7 @@
 				B478E88B2763548A00410E84 /* TokenCertificateStorage.swift in Sources */,
 				B478E8882762A70200410E84 /* Data+Extensions.swift in Sources */,
 				B48826D32762573D0008BCB1 /* BrowserView.swift in Sources */,
+				B417C731279566E700753BC5 /* WebNavigationView.swift in Sources */,
 				B48826E1276274070008BCB1 /* CertificatesModel.swift in Sources */,
 				B48826DF276261070008BCB1 /* CertificatesView.swift in Sources */,
 				B48826D12762573D0008BCB1 /* YubicoBrowserApp.swift in Sources */,

@@ -1,5 +1,5 @@
 //
-//  WebViewModel.swift
+//  BrowserModel.swift
 //  Yubico Browser
 //
 //  Created by Jens Utbult on 2021-12-10.
@@ -88,10 +88,10 @@ class BrowserModel: NSObject, WKNavigationDelegate {
         }
     }
     
-//    func load(url: URL) {
-//        let request = URLRequest(url: url)
-//        webView.load(request)
-//    }
+    func load(url: URL) {
+        let request = URLRequest(url: url)
+        webView.load(request)
+    }
 }
 
 

@@ -10,8 +10,18 @@ import SwiftUI
 struct CertificatesView: View {
     
     @StateObject var model = CertificatesModel()
-
+    @Environment(\.dismiss) var dismiss
+    
     var body: some View {
+        VStack(spacing: 0) {
+        HStack(spacing: 0) {
+            Spacer()
+            Button("Dismiss") {
+                dismiss()
+            }
+        }
+        .padding()
+        .background(Color(.secondarySystemBackground))
         List() {
             Section("Certificates on device") {
                 if !model.deviceCertificates.isEmpty {
@@ -32,7 +42,7 @@ struct CertificatesView: View {
                 }
             }
         }
-        .navigationTitle("Certificates")
+        }
     }
 }
 
