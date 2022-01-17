@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B42BC1EE2763BA2900216109 /* BrowserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42BC1ED2763BA2900216109 /* BrowserModel.swift */; };
 		B478E87E27627F7000410E84 /* YubiKeyConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B478E87D27627F7000410E84 /* YubiKeyConnection.swift */; };
 		B478E8802762A5F100410E84 /* SecCertificate+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B478E87F2762A5F100410E84 /* SecCertificate+Extensions.swift */; };
 		B478E8882762A70200410E84 /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B478E8872762A70200410E84 /* Data+Extensions.swift */; };
@@ -23,6 +24,48 @@
 		B48826DF276261070008BCB1 /* CertificatesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48826DE276261070008BCB1 /* CertificatesView.swift */; };
 		B48826E1276274070008BCB1 /* CertificatesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48826E0276274070008BCB1 /* CertificatesModel.swift */; };
 		B48826E427627A730008BCB1 /* YubiKit in Frameworks */ = {isa = PBXBuildFile; productRef = B48826E327627A730008BCB1 /* YubiKit */; };
+		B4CA3D7D278F05E4004D0287 /* MF_Base32Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CA3D06278F05E3004D0287 /* MF_Base32Additions.m */; };
+		B4CA3D7E278F05E4004D0287 /* YKFFeature.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CA3D0A278F05E3004D0287 /* YKFFeature.m */; };
+		B4CA3D7F278F05E4004D0287 /* YKFAPDU.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CA3D0C278F05E3004D0287 /* YKFAPDU.m */; };
+		B4CA3D80278F05E4004D0287 /* YKFSelectApplicationAPDU.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CA3D0F278F05E3004D0287 /* YKFSelectApplicationAPDU.m */; };
+		B4CA3D81278F05E4004D0287 /* YKFVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CA3D18278F05E3004D0287 /* YKFVersion.m */; };
+		B4CA3D82278F05E4004D0287 /* YKFRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CA3D20278F05E4004D0287 /* YKFRequest.m */; };
+		B4CA3D83278F05E4004D0287 /* YKFPIVSession.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CA3D28278F05E4004D0287 /* YKFPIVSession.m */; };
+		B4CA3D84278F05E4004D0287 /* YKFPIVKeyType.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CA3D29278F05E4004D0287 /* YKFPIVKeyType.m */; };
+		B4CA3D85278F05E4004D0287 /* YKFPIVPadding.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CA3D2A278F05E4004D0287 /* YKFPIVPadding.m */; };
+		B4CA3D86278F05E4004D0287 /* YKFPIVSessionFeatures.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CA3D2E278F05E4004D0287 /* YKFPIVSessionFeatures.m */; };
+		B4CA3D87278F05E4004D0287 /* YKFPIVManagementKeyType.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CA3D31278F05E4004D0287 /* YKFPIVManagementKeyType.m */; };
+		B4CA3D88278F05E4004D0287 /* YKFPIVManagementKeyMetadata.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CA3D33278F05E4004D0287 /* YKFPIVManagementKeyMetadata.m */; };
+		B4CA3D89278F05E4004D0287 /* YKFSession.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CA3D36278F05E4004D0287 /* YKFSession.m */; };
+		B4CA3D8A278F05E4004D0287 /* YKFAPDUError.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CA3D3A278F05E4004D0287 /* YKFAPDUError.m */; };
+		B4CA3D8B278F05E4004D0287 /* YKFSessionError.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CA3D3B278F05E4004D0287 /* YKFSessionError.m */; };
+		B4CA3D8C278F05E4004D0287 /* YKFOATHError.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CA3D3E278F05E4004D0287 /* YKFOATHError.m */; };
+		B4CA3D8D278F05E4004D0287 /* YKFPIVError.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CA3D40278F05E4004D0287 /* YKFPIVError.m */; };
+		B4CA3D8E278F05E4004D0287 /* YKFU2FError.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CA3D43278F05E4004D0287 /* YKFU2FError.m */; };
+		B4CA3D8F278F05E4004D0287 /* YKFChallengeResponseError.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CA3D45278F05E4004D0287 /* YKFChallengeResponseError.m */; };
+		B4CA3D90278F05E4004D0287 /* YKFFIDO2Error.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CA3D47278F05E4004D0287 /* YKFFIDO2Error.m */; };
+		B4CA3D91278F05E4004D0287 /* YKFSmartCardInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CA3D4B278F05E4004D0287 /* YKFSmartCardInterface.m */; };
+		B4CA3D92278F05E4004D0287 /* YKFAccessoryConnectionConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CA3D4F278F05E4004D0287 /* YKFAccessoryConnectionConfiguration.m */; };
+		B4CA3D93278F05E4004D0287 /* YKFAccessoryConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CA3D50278F05E4004D0287 /* YKFAccessoryConnection.m */; };
+		B4CA3D94278F05E4004D0287 /* YKFAccessoryConnectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CA3D51278F05E4004D0287 /* YKFAccessoryConnectionController.m */; };
+		B4CA3D95278F05E4004D0287 /* YKFAccessoryConnection+Debugging.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CA3D52278F05E4004D0287 /* YKFAccessoryConnection+Debugging.m */; };
+		B4CA3D96278F05E4004D0287 /* YKFAccessoryDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CA3D5B278F05E4004D0287 /* YKFAccessoryDescription.m */; };
+		B4CA3D97278F05E4004D0287 /* YubiKitDeviceCapabilities.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CA3D5C278F05E4004D0287 /* YubiKitDeviceCapabilities.m */; };
+		B4CA3D98278F05E4004D0287 /* YKFDispatch.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CA3D5F278F05E4004D0287 /* YKFDispatch.m */; };
+		B4CA3D99278F05E4004D0287 /* NSArray+TKTLVRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CA3D62278F05E4004D0287 /* NSArray+TKTLVRecord.m */; };
+		B4CA3D9A278F05E4004D0287 /* TKTLVRecordAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CA3D63278F05E4004D0287 /* TKTLVRecordAdditions.m */; };
+		B4CA3D9B278F05E4004D0287 /* YKFNSMutableDataAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CA3D68278F05E4004D0287 /* YKFNSMutableDataAdditions.m */; };
+		B4CA3D9C278F05E4004D0287 /* YKFNSStringAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CA3D69278F05E4004D0287 /* YKFNSStringAdditions.m */; };
+		B4CA3D9D278F05E4004D0287 /* YKFNSDataAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CA3D6B278F05E4004D0287 /* YKFNSDataAdditions.m */; };
+		B4CA3D9E278F05E4004D0287 /* UIDeviceAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CA3D6D278F05E4004D0287 /* UIDeviceAdditions.m */; };
+		B4CA3D9F278F05E4004D0287 /* YKFLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CA3D6F278F05E4004D0287 /* YKFLogger.m */; };
+		B4CA3DA0278F05E4004D0287 /* YKFKVOObservation.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CA3D71278F05E4004D0287 /* YKFKVOObservation.m */; };
+		B4CA3DA1278F05E4004D0287 /* YKFView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CA3D73278F05E4004D0287 /* YKFView.m */; };
+		B4CA3DA2278F05E4004D0287 /* YKFPermissions.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CA3D75278F05E4004D0287 /* YKFPermissions.m */; };
+		B4CA3DA3278F05E4004D0287 /* YubiKitManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CA3D7B278F05E4004D0287 /* YubiKitManager.m */; };
+		B4CA3DA4278F05E4004D0287 /* YubiKitLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CA3D7C278F05E4004D0287 /* YubiKitLogger.m */; };
+		B4CA3DA6278F0646004D0287 /* YubiKeyPIVSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CA3DA5278F0646004D0287 /* YubiKeyPIVSession.swift */; };
+		B4CA3DA8278F06EF004D0287 /* TKTokenAlgorithm+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CA3DA7278F06EF004D0287 /* TKTokenAlgorithm+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +93,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B42BC1ED2763BA2900216109 /* BrowserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserModel.swift; sourceTree = "<group>"; };
 		B478E87C27627C8B00410E84 /* Yubico-Browser-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Yubico-Browser-Info.plist"; sourceTree = SOURCE_ROOT; };
 		B478E87D27627F7000410E84 /* YubiKeyConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YubiKeyConnection.swift; sourceTree = "<group>"; };
 		B478E87F2762A5F100410E84 /* SecCertificate+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SecCertificate+Extensions.swift"; sourceTree = "<group>"; };
@@ -71,6 +115,110 @@
 		B48826DE276261070008BCB1 /* CertificatesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificatesView.swift; sourceTree = "<group>"; };
 		B48826E0276274070008BCB1 /* CertificatesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificatesModel.swift; sourceTree = "<group>"; };
 		B48826E527627A960008BCB1 /* Yubico Browser.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Yubico Browser.entitlements"; sourceTree = "<group>"; };
+		B4CA3D01278F05E3004D0287 /* YubiKitDeviceCapabilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YubiKitDeviceCapabilities.h; sourceTree = "<group>"; };
+		B4CA3D03278F05E3004D0287 /* YubiKitLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YubiKitLogger.h; sourceTree = "<group>"; };
+		B4CA3D04278F05E3004D0287 /* YubiKitManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YubiKitManager.h; sourceTree = "<group>"; };
+		B4CA3D06278F05E3004D0287 /* MF_Base32Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MF_Base32Additions.m; sourceTree = "<group>"; };
+		B4CA3D07278F05E3004D0287 /* MF_Base32Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MF_Base32Additions.h; sourceTree = "<group>"; };
+		B4CA3D0A278F05E3004D0287 /* YKFFeature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKFFeature.m; sourceTree = "<group>"; };
+		B4CA3D0C278F05E3004D0287 /* YKFAPDU.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKFAPDU.m; sourceTree = "<group>"; };
+		B4CA3D0F278F05E3004D0287 /* YKFSelectApplicationAPDU.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKFSelectApplicationAPDU.m; sourceTree = "<group>"; };
+		B4CA3D10278F05E3004D0287 /* YKFAPDUCommandInstruction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKFAPDUCommandInstruction.h; sourceTree = "<group>"; };
+		B4CA3D11278F05E3004D0287 /* YKFAPDU.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKFAPDU.h; sourceTree = "<group>"; };
+		B4CA3D15278F05E3004D0287 /* YKFSelectApplicationAPDU.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKFSelectApplicationAPDU.h; sourceTree = "<group>"; };
+		B4CA3D16278F05E3004D0287 /* YKFAPDU+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YKFAPDU+Private.h"; sourceTree = "<group>"; };
+		B4CA3D17278F05E3004D0287 /* YKFConnectionControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKFConnectionControllerProtocol.h; sourceTree = "<group>"; };
+		B4CA3D18278F05E3004D0287 /* YKFVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKFVersion.m; sourceTree = "<group>"; };
+		B4CA3D1B278F05E4004D0287 /* YKFRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKFRequest.h; sourceTree = "<group>"; };
+		B4CA3D1C278F05E4004D0287 /* YKFSlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKFSlot.h; sourceTree = "<group>"; };
+		B4CA3D20278F05E4004D0287 /* YKFRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKFRequest.m; sourceTree = "<group>"; };
+		B4CA3D21278F05E4004D0287 /* YKFFeature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKFFeature.h; sourceTree = "<group>"; };
+		B4CA3D23278F05E4004D0287 /* YKFSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKFSession.h; sourceTree = "<group>"; };
+		B4CA3D24278F05E4004D0287 /* YKFSessionProtocol+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YKFSessionProtocol+Private.h"; sourceTree = "<group>"; };
+		B4CA3D25278F05E4004D0287 /* YKFSession+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YKFSession+Private.h"; sourceTree = "<group>"; };
+		B4CA3D27278F05E4004D0287 /* YKFPIVSessionFeatures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKFPIVSessionFeatures.h; sourceTree = "<group>"; };
+		B4CA3D28278F05E4004D0287 /* YKFPIVSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKFPIVSession.m; sourceTree = "<group>"; };
+		B4CA3D29278F05E4004D0287 /* YKFPIVKeyType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKFPIVKeyType.m; sourceTree = "<group>"; };
+		B4CA3D2A278F05E4004D0287 /* YKFPIVPadding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKFPIVPadding.m; sourceTree = "<group>"; };
+		B4CA3D2B278F05E4004D0287 /* YKFPIVPadding+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YKFPIVPadding+Private.h"; sourceTree = "<group>"; };
+		B4CA3D2C278F05E4004D0287 /* YKFPIVManagementKeyMetadata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKFPIVManagementKeyMetadata.h; sourceTree = "<group>"; };
+		B4CA3D2D278F05E4004D0287 /* YKFPIVManagementKeyType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKFPIVManagementKeyType.h; sourceTree = "<group>"; };
+		B4CA3D2E278F05E4004D0287 /* YKFPIVSessionFeatures.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKFPIVSessionFeatures.m; sourceTree = "<group>"; };
+		B4CA3D2F278F05E4004D0287 /* YKFPIVSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKFPIVSession.h; sourceTree = "<group>"; };
+		B4CA3D30278F05E4004D0287 /* YKFPIVKeyType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKFPIVKeyType.h; sourceTree = "<group>"; };
+		B4CA3D31278F05E4004D0287 /* YKFPIVManagementKeyType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKFPIVManagementKeyType.m; sourceTree = "<group>"; };
+		B4CA3D32278F05E4004D0287 /* YKFPIVSession+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YKFPIVSession+Private.h"; sourceTree = "<group>"; };
+		B4CA3D33278F05E4004D0287 /* YKFPIVManagementKeyMetadata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKFPIVManagementKeyMetadata.m; sourceTree = "<group>"; };
+		B4CA3D34278F05E4004D0287 /* YKFPIVManagementKeyMetadata+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YKFPIVManagementKeyMetadata+Private.h"; sourceTree = "<group>"; };
+		B4CA3D35278F05E4004D0287 /* YKFManagementSessionFeatures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKFManagementSessionFeatures.h; sourceTree = "<group>"; };
+		B4CA3D36278F05E4004D0287 /* YKFSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKFSession.m; sourceTree = "<group>"; };
+		B4CA3D37278F05E4004D0287 /* YKFManagementDeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKFManagementDeviceInfo.h; sourceTree = "<group>"; };
+		B4CA3D39278F05E4004D0287 /* YKFSessionError+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YKFSessionError+Private.h"; sourceTree = "<group>"; };
+		B4CA3D3A278F05E4004D0287 /* YKFAPDUError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKFAPDUError.m; sourceTree = "<group>"; };
+		B4CA3D3B278F05E4004D0287 /* YKFSessionError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKFSessionError.m; sourceTree = "<group>"; };
+		B4CA3D3C278F05E4004D0287 /* YKFChallengeResponseError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKFChallengeResponseError.h; sourceTree = "<group>"; };
+		B4CA3D3D278F05E4004D0287 /* YKFU2FError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKFU2FError.h; sourceTree = "<group>"; };
+		B4CA3D3E278F05E4004D0287 /* YKFOATHError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKFOATHError.m; sourceTree = "<group>"; };
+		B4CA3D3F278F05E4004D0287 /* YKFFIDO2Error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKFFIDO2Error.h; sourceTree = "<group>"; };
+		B4CA3D40278F05E4004D0287 /* YKFPIVError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKFPIVError.m; sourceTree = "<group>"; };
+		B4CA3D41278F05E4004D0287 /* YKFAPDUError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKFAPDUError.h; sourceTree = "<group>"; };
+		B4CA3D42278F05E4004D0287 /* YKFOATHError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKFOATHError.h; sourceTree = "<group>"; };
+		B4CA3D43278F05E4004D0287 /* YKFU2FError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKFU2FError.m; sourceTree = "<group>"; };
+		B4CA3D44278F05E4004D0287 /* YKFSessionError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKFSessionError.h; sourceTree = "<group>"; };
+		B4CA3D45278F05E4004D0287 /* YKFChallengeResponseError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKFChallengeResponseError.m; sourceTree = "<group>"; };
+		B4CA3D46278F05E4004D0287 /* YKFPIVError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKFPIVError.h; sourceTree = "<group>"; };
+		B4CA3D47278F05E4004D0287 /* YKFFIDO2Error.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKFFIDO2Error.m; sourceTree = "<group>"; };
+		B4CA3D48278F05E4004D0287 /* YKFVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKFVersion.h; sourceTree = "<group>"; };
+		B4CA3D4A278F05E4004D0287 /* YKFSmartCardInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKFSmartCardInterface.h; sourceTree = "<group>"; };
+		B4CA3D4B278F05E4004D0287 /* YKFSmartCardInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKFSmartCardInterface.m; sourceTree = "<group>"; };
+		B4CA3D4C278F05E4004D0287 /* YKFConnectionProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKFConnectionProtocol.h; sourceTree = "<group>"; };
+		B4CA3D4E278F05E4004D0287 /* YKFEASessionProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKFEASessionProtocol.h; sourceTree = "<group>"; };
+		B4CA3D4F278F05E4004D0287 /* YKFAccessoryConnectionConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKFAccessoryConnectionConfiguration.m; sourceTree = "<group>"; };
+		B4CA3D50278F05E4004D0287 /* YKFAccessoryConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKFAccessoryConnection.m; sourceTree = "<group>"; };
+		B4CA3D51278F05E4004D0287 /* YKFAccessoryConnectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKFAccessoryConnectionController.m; sourceTree = "<group>"; };
+		B4CA3D52278F05E4004D0287 /* YKFAccessoryConnection+Debugging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "YKFAccessoryConnection+Debugging.m"; sourceTree = "<group>"; };
+		B4CA3D53278F05E4004D0287 /* YKFAccessoryDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKFAccessoryDescription.h; sourceTree = "<group>"; };
+		B4CA3D54278F05E4004D0287 /* YKFAccessoryConnectionConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKFAccessoryConnectionConfiguration.h; sourceTree = "<group>"; };
+		B4CA3D55278F05E4004D0287 /* YKFAccessoryDescription+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YKFAccessoryDescription+Private.h"; sourceTree = "<group>"; };
+		B4CA3D56278F05E4004D0287 /* YKFAccessoryConnection+Debugging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YKFAccessoryConnection+Debugging.h"; sourceTree = "<group>"; };
+		B4CA3D57278F05E4004D0287 /* YKFAccessoryConnectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKFAccessoryConnectionController.h; sourceTree = "<group>"; };
+		B4CA3D58278F05E4004D0287 /* YKFAccessoryConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKFAccessoryConnection.h; sourceTree = "<group>"; };
+		B4CA3D59278F05E4004D0287 /* YKFEAAccessoryManagerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKFEAAccessoryManagerProtocol.h; sourceTree = "<group>"; };
+		B4CA3D5A278F05E4004D0287 /* YKFAccessoryConnection+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YKFAccessoryConnection+Private.h"; sourceTree = "<group>"; };
+		B4CA3D5B278F05E4004D0287 /* YKFAccessoryDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKFAccessoryDescription.m; sourceTree = "<group>"; };
+		B4CA3D5C278F05E4004D0287 /* YubiKitDeviceCapabilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YubiKitDeviceCapabilities.m; sourceTree = "<group>"; };
+		B4CA3D5D278F05E4004D0287 /* YubiKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YubiKit.h; sourceTree = "<group>"; };
+		B4CA3D5F278F05E4004D0287 /* YKFDispatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKFDispatch.m; sourceTree = "<group>"; };
+		B4CA3D60278F05E4004D0287 /* YKFView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKFView.h; sourceTree = "<group>"; };
+		B4CA3D62278F05E4004D0287 /* NSArray+TKTLVRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+TKTLVRecord.m"; sourceTree = "<group>"; };
+		B4CA3D63278F05E4004D0287 /* TKTLVRecordAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKTLVRecordAdditions.m; sourceTree = "<group>"; };
+		B4CA3D64278F05E4004D0287 /* YKFNSStringAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKFNSStringAdditions.h; sourceTree = "<group>"; };
+		B4CA3D65278F05E4004D0287 /* YKFNSDataAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKFNSDataAdditions.h; sourceTree = "<group>"; };
+		B4CA3D66278F05E4004D0287 /* TKTLVRecordAdditions+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TKTLVRecordAdditions+Private.h"; sourceTree = "<group>"; };
+		B4CA3D67278F05E4004D0287 /* UIDeviceAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDeviceAdditions.h; sourceTree = "<group>"; };
+		B4CA3D68278F05E4004D0287 /* YKFNSMutableDataAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKFNSMutableDataAdditions.m; sourceTree = "<group>"; };
+		B4CA3D69278F05E4004D0287 /* YKFNSStringAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKFNSStringAdditions.m; sourceTree = "<group>"; };
+		B4CA3D6A278F05E4004D0287 /* NSArray+TKTLVRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+TKTLVRecord.h"; sourceTree = "<group>"; };
+		B4CA3D6B278F05E4004D0287 /* YKFNSDataAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKFNSDataAdditions.m; sourceTree = "<group>"; };
+		B4CA3D6C278F05E4004D0287 /* YKFNSDataAdditions+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YKFNSDataAdditions+Private.h"; sourceTree = "<group>"; };
+		B4CA3D6D278F05E4004D0287 /* UIDeviceAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIDeviceAdditions.m; sourceTree = "<group>"; };
+		B4CA3D6E278F05E4004D0287 /* YKFNSMutableDataAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKFNSMutableDataAdditions.h; sourceTree = "<group>"; };
+		B4CA3D6F278F05E4004D0287 /* YKFLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKFLogger.m; sourceTree = "<group>"; };
+		B4CA3D70278F05E4004D0287 /* YKFPermissions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKFPermissions.h; sourceTree = "<group>"; };
+		B4CA3D71278F05E4004D0287 /* YKFKVOObservation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKFKVOObservation.m; sourceTree = "<group>"; };
+		B4CA3D72278F05E4004D0287 /* YKFBlockMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKFBlockMacros.h; sourceTree = "<group>"; };
+		B4CA3D73278F05E4004D0287 /* YKFView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKFView.m; sourceTree = "<group>"; };
+		B4CA3D74278F05E4004D0287 /* YKFDispatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKFDispatch.h; sourceTree = "<group>"; };
+		B4CA3D75278F05E4004D0287 /* YKFPermissions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKFPermissions.m; sourceTree = "<group>"; };
+		B4CA3D76278F05E4004D0287 /* YKFKVOObservation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKFKVOObservation.h; sourceTree = "<group>"; };
+		B4CA3D77278F05E4004D0287 /* YKFLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKFLogger.h; sourceTree = "<group>"; };
+		B4CA3D78278F05E4004D0287 /* YKFAssert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKFAssert.h; sourceTree = "<group>"; };
+		B4CA3D79278F05E4004D0287 /* YKFUIDeviceProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKFUIDeviceProtocol.h; sourceTree = "<group>"; };
+		B4CA3D7A278F05E4004D0287 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		B4CA3D7B278F05E4004D0287 /* YubiKitManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YubiKitManager.m; sourceTree = "<group>"; };
+		B4CA3D7C278F05E4004D0287 /* YubiKitLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YubiKitLogger.m; sourceTree = "<group>"; };
+		B4CA3DA5278F0646004D0287 /* YubiKeyPIVSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YubiKeyPIVSession.swift; sourceTree = "<group>"; };
+		B4CA3DA7278F06EF004D0287 /* TKTokenAlgorithm+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TKTokenAlgorithm+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,11 +262,14 @@
 		B478E89227635FE800410E84 /* TokenExtension */ = {
 			isa = PBXGroup;
 			children = (
+				B4CA3D00278F05E3004D0287 /* YubiKitLight */,
 				B478E8A12763638E00410E84 /* TokenExtension.entitlements */,
 				B478E89327635FE800410E84 /* Token.swift */,
 				B478E89527635FE800410E84 /* TokenDriver.swift */,
 				B478E89727635FE800410E84 /* TokenSession.swift */,
 				B478E89927635FE800410E84 /* Info.plist */,
+				B4CA3DA5278F0646004D0287 /* YubiKeyPIVSession.swift */,
+				B4CA3DA7278F06EF004D0287 /* TKTokenAlgorithm+Extensions.swift */,
 			);
 			path = TokenExtension;
 			sourceTree = "<group>";
@@ -150,6 +301,7 @@
 				B48826E527627A960008BCB1 /* Yubico Browser.entitlements */,
 				B48826D02762573D0008BCB1 /* YubicoBrowserApp.swift */,
 				B48826D22762573D0008BCB1 /* BrowserView.swift */,
+				B42BC1ED2763BA2900216109 /* BrowserModel.swift */,
 				B48826DE276261070008BCB1 /* CertificatesView.swift */,
 				B48826E0276274070008BCB1 /* CertificatesModel.swift */,
 				B478E87D27627F7000410E84 /* YubiKeyConnection.swift */,
@@ -166,6 +318,291 @@
 				B48826D72762573E0008BCB1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B4CA3D00278F05E3004D0287 /* YubiKitLight */ = {
+			isa = PBXGroup;
+			children = (
+				B4CA3D01278F05E3004D0287 /* YubiKitDeviceCapabilities.h */,
+				B4CA3D02278F05E3004D0287 /* SharedModel */,
+				B4CA3D03278F05E3004D0287 /* YubiKitLogger.h */,
+				B4CA3D04278F05E3004D0287 /* YubiKitManager.h */,
+				B4CA3D05278F05E3004D0287 /* ThirdParties */,
+				B4CA3D08278F05E3004D0287 /* Connections */,
+				B4CA3D5C278F05E4004D0287 /* YubiKitDeviceCapabilities.m */,
+				B4CA3D5D278F05E4004D0287 /* YubiKit.h */,
+				B4CA3D5E278F05E4004D0287 /* Helpers */,
+				B4CA3D79278F05E4004D0287 /* YKFUIDeviceProtocol.h */,
+				B4CA3D7A278F05E4004D0287 /* Bridging-Header.h */,
+				B4CA3D7B278F05E4004D0287 /* YubiKitManager.m */,
+				B4CA3D7C278F05E4004D0287 /* YubiKitLogger.m */,
+			);
+			path = YubiKitLight;
+			sourceTree = "<group>";
+		};
+		B4CA3D02278F05E3004D0287 /* SharedModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SharedModel;
+			sourceTree = "<group>";
+		};
+		B4CA3D05278F05E3004D0287 /* ThirdParties */ = {
+			isa = PBXGroup;
+			children = (
+				B4CA3D06278F05E3004D0287 /* MF_Base32Additions.m */,
+				B4CA3D07278F05E3004D0287 /* MF_Base32Additions.h */,
+			);
+			path = ThirdParties;
+			sourceTree = "<group>";
+		};
+		B4CA3D08278F05E3004D0287 /* Connections */ = {
+			isa = PBXGroup;
+			children = (
+				B4CA3D09278F05E3004D0287 /* Shared */,
+				B4CA3D49278F05E4004D0287 /* SmartCardInterface */,
+				B4CA3D4C278F05E4004D0287 /* YKFConnectionProtocol.h */,
+				B4CA3D4D278F05E4004D0287 /* AccessoryConnection */,
+			);
+			path = Connections;
+			sourceTree = "<group>";
+		};
+		B4CA3D09278F05E3004D0287 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				B4CA3D0A278F05E3004D0287 /* YKFFeature.m */,
+				B4CA3D0B278F05E3004D0287 /* APDU */,
+				B4CA3D17278F05E3004D0287 /* YKFConnectionControllerProtocol.h */,
+				B4CA3D18278F05E3004D0287 /* YKFVersion.m */,
+				B4CA3D19278F05E4004D0287 /* Requests */,
+				B4CA3D21278F05E4004D0287 /* YKFFeature.h */,
+				B4CA3D22278F05E4004D0287 /* Sessions */,
+				B4CA3D38278F05E4004D0287 /* Errors */,
+				B4CA3D48278F05E4004D0287 /* YKFVersion.h */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		B4CA3D0B278F05E3004D0287 /* APDU */ = {
+			isa = PBXGroup;
+			children = (
+				B4CA3D0C278F05E3004D0287 /* YKFAPDU.m */,
+				B4CA3D0D278F05E3004D0287 /* MGMT */,
+				B4CA3D0E278F05E3004D0287 /* ChalResp */,
+				B4CA3D0F278F05E3004D0287 /* YKFSelectApplicationAPDU.m */,
+				B4CA3D10278F05E3004D0287 /* YKFAPDUCommandInstruction.h */,
+				B4CA3D11278F05E3004D0287 /* YKFAPDU.h */,
+				B4CA3D12278F05E3004D0287 /* OATH */,
+				B4CA3D13278F05E3004D0287 /* FIDO2 */,
+				B4CA3D14278F05E3004D0287 /* U2F */,
+				B4CA3D15278F05E3004D0287 /* YKFSelectApplicationAPDU.h */,
+				B4CA3D16278F05E3004D0287 /* YKFAPDU+Private.h */,
+			);
+			path = APDU;
+			sourceTree = "<group>";
+		};
+		B4CA3D0D278F05E3004D0287 /* MGMT */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MGMT;
+			sourceTree = "<group>";
+		};
+		B4CA3D0E278F05E3004D0287 /* ChalResp */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ChalResp;
+			sourceTree = "<group>";
+		};
+		B4CA3D12278F05E3004D0287 /* OATH */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = OATH;
+			sourceTree = "<group>";
+		};
+		B4CA3D13278F05E3004D0287 /* FIDO2 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FIDO2;
+			sourceTree = "<group>";
+		};
+		B4CA3D14278F05E3004D0287 /* U2F */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = U2F;
+			sourceTree = "<group>";
+		};
+		B4CA3D19278F05E4004D0287 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				B4CA3D1A278F05E4004D0287 /* ChalResp */,
+				B4CA3D1B278F05E4004D0287 /* YKFRequest.h */,
+				B4CA3D1C278F05E4004D0287 /* YKFSlot.h */,
+				B4CA3D1D278F05E4004D0287 /* OATH */,
+				B4CA3D1E278F05E4004D0287 /* FIDO2 */,
+				B4CA3D1F278F05E4004D0287 /* U2F */,
+				B4CA3D20278F05E4004D0287 /* YKFRequest.m */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		B4CA3D1A278F05E4004D0287 /* ChalResp */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ChalResp;
+			sourceTree = "<group>";
+		};
+		B4CA3D1D278F05E4004D0287 /* OATH */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = OATH;
+			sourceTree = "<group>";
+		};
+		B4CA3D1E278F05E4004D0287 /* FIDO2 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FIDO2;
+			sourceTree = "<group>";
+		};
+		B4CA3D1F278F05E4004D0287 /* U2F */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = U2F;
+			sourceTree = "<group>";
+		};
+		B4CA3D22278F05E4004D0287 /* Sessions */ = {
+			isa = PBXGroup;
+			children = (
+				B4CA3D23278F05E4004D0287 /* YKFSession.h */,
+				B4CA3D24278F05E4004D0287 /* YKFSessionProtocol+Private.h */,
+				B4CA3D25278F05E4004D0287 /* YKFSession+Private.h */,
+				B4CA3D26278F05E4004D0287 /* PIV */,
+				B4CA3D35278F05E4004D0287 /* YKFManagementSessionFeatures.h */,
+				B4CA3D36278F05E4004D0287 /* YKFSession.m */,
+				B4CA3D37278F05E4004D0287 /* YKFManagementDeviceInfo.h */,
+			);
+			path = Sessions;
+			sourceTree = "<group>";
+		};
+		B4CA3D26278F05E4004D0287 /* PIV */ = {
+			isa = PBXGroup;
+			children = (
+				B4CA3D27278F05E4004D0287 /* YKFPIVSessionFeatures.h */,
+				B4CA3D28278F05E4004D0287 /* YKFPIVSession.m */,
+				B4CA3D29278F05E4004D0287 /* YKFPIVKeyType.m */,
+				B4CA3D2A278F05E4004D0287 /* YKFPIVPadding.m */,
+				B4CA3D2B278F05E4004D0287 /* YKFPIVPadding+Private.h */,
+				B4CA3D2C278F05E4004D0287 /* YKFPIVManagementKeyMetadata.h */,
+				B4CA3D2D278F05E4004D0287 /* YKFPIVManagementKeyType.h */,
+				B4CA3D2E278F05E4004D0287 /* YKFPIVSessionFeatures.m */,
+				B4CA3D2F278F05E4004D0287 /* YKFPIVSession.h */,
+				B4CA3D30278F05E4004D0287 /* YKFPIVKeyType.h */,
+				B4CA3D31278F05E4004D0287 /* YKFPIVManagementKeyType.m */,
+				B4CA3D32278F05E4004D0287 /* YKFPIVSession+Private.h */,
+				B4CA3D33278F05E4004D0287 /* YKFPIVManagementKeyMetadata.m */,
+				B4CA3D34278F05E4004D0287 /* YKFPIVManagementKeyMetadata+Private.h */,
+			);
+			path = PIV;
+			sourceTree = "<group>";
+		};
+		B4CA3D38278F05E4004D0287 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				B4CA3D39278F05E4004D0287 /* YKFSessionError+Private.h */,
+				B4CA3D3A278F05E4004D0287 /* YKFAPDUError.m */,
+				B4CA3D3B278F05E4004D0287 /* YKFSessionError.m */,
+				B4CA3D3C278F05E4004D0287 /* YKFChallengeResponseError.h */,
+				B4CA3D3D278F05E4004D0287 /* YKFU2FError.h */,
+				B4CA3D3E278F05E4004D0287 /* YKFOATHError.m */,
+				B4CA3D3F278F05E4004D0287 /* YKFFIDO2Error.h */,
+				B4CA3D40278F05E4004D0287 /* YKFPIVError.m */,
+				B4CA3D41278F05E4004D0287 /* YKFAPDUError.h */,
+				B4CA3D42278F05E4004D0287 /* YKFOATHError.h */,
+				B4CA3D43278F05E4004D0287 /* YKFU2FError.m */,
+				B4CA3D44278F05E4004D0287 /* YKFSessionError.h */,
+				B4CA3D45278F05E4004D0287 /* YKFChallengeResponseError.m */,
+				B4CA3D46278F05E4004D0287 /* YKFPIVError.h */,
+				B4CA3D47278F05E4004D0287 /* YKFFIDO2Error.m */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		B4CA3D49278F05E4004D0287 /* SmartCardInterface */ = {
+			isa = PBXGroup;
+			children = (
+				B4CA3D4A278F05E4004D0287 /* YKFSmartCardInterface.h */,
+				B4CA3D4B278F05E4004D0287 /* YKFSmartCardInterface.m */,
+			);
+			path = SmartCardInterface;
+			sourceTree = "<group>";
+		};
+		B4CA3D4D278F05E4004D0287 /* AccessoryConnection */ = {
+			isa = PBXGroup;
+			children = (
+				B4CA3D4E278F05E4004D0287 /* YKFEASessionProtocol.h */,
+				B4CA3D4F278F05E4004D0287 /* YKFAccessoryConnectionConfiguration.m */,
+				B4CA3D50278F05E4004D0287 /* YKFAccessoryConnection.m */,
+				B4CA3D51278F05E4004D0287 /* YKFAccessoryConnectionController.m */,
+				B4CA3D52278F05E4004D0287 /* YKFAccessoryConnection+Debugging.m */,
+				B4CA3D53278F05E4004D0287 /* YKFAccessoryDescription.h */,
+				B4CA3D54278F05E4004D0287 /* YKFAccessoryConnectionConfiguration.h */,
+				B4CA3D55278F05E4004D0287 /* YKFAccessoryDescription+Private.h */,
+				B4CA3D56278F05E4004D0287 /* YKFAccessoryConnection+Debugging.h */,
+				B4CA3D57278F05E4004D0287 /* YKFAccessoryConnectionController.h */,
+				B4CA3D58278F05E4004D0287 /* YKFAccessoryConnection.h */,
+				B4CA3D59278F05E4004D0287 /* YKFEAAccessoryManagerProtocol.h */,
+				B4CA3D5A278F05E4004D0287 /* YKFAccessoryConnection+Private.h */,
+				B4CA3D5B278F05E4004D0287 /* YKFAccessoryDescription.m */,
+			);
+			path = AccessoryConnection;
+			sourceTree = "<group>";
+		};
+		B4CA3D5E278F05E4004D0287 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B4CA3D5F278F05E4004D0287 /* YKFDispatch.m */,
+				B4CA3D60278F05E4004D0287 /* YKFView.h */,
+				B4CA3D61278F05E4004D0287 /* Additions */,
+				B4CA3D6F278F05E4004D0287 /* YKFLogger.m */,
+				B4CA3D70278F05E4004D0287 /* YKFPermissions.h */,
+				B4CA3D71278F05E4004D0287 /* YKFKVOObservation.m */,
+				B4CA3D72278F05E4004D0287 /* YKFBlockMacros.h */,
+				B4CA3D73278F05E4004D0287 /* YKFView.m */,
+				B4CA3D74278F05E4004D0287 /* YKFDispatch.h */,
+				B4CA3D75278F05E4004D0287 /* YKFPermissions.m */,
+				B4CA3D76278F05E4004D0287 /* YKFKVOObservation.h */,
+				B4CA3D77278F05E4004D0287 /* YKFLogger.h */,
+				B4CA3D78278F05E4004D0287 /* YKFAssert.h */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		B4CA3D61278F05E4004D0287 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				B4CA3D62278F05E4004D0287 /* NSArray+TKTLVRecord.m */,
+				B4CA3D63278F05E4004D0287 /* TKTLVRecordAdditions.m */,
+				B4CA3D64278F05E4004D0287 /* YKFNSStringAdditions.h */,
+				B4CA3D65278F05E4004D0287 /* YKFNSDataAdditions.h */,
+				B4CA3D66278F05E4004D0287 /* TKTLVRecordAdditions+Private.h */,
+				B4CA3D67278F05E4004D0287 /* UIDeviceAdditions.h */,
+				B4CA3D68278F05E4004D0287 /* YKFNSMutableDataAdditions.m */,
+				B4CA3D69278F05E4004D0287 /* YKFNSStringAdditions.m */,
+				B4CA3D6A278F05E4004D0287 /* NSArray+TKTLVRecord.h */,
+				B4CA3D6B278F05E4004D0287 /* YKFNSDataAdditions.m */,
+				B4CA3D6C278F05E4004D0287 /* YKFNSDataAdditions+Private.h */,
+				B4CA3D6D278F05E4004D0287 /* UIDeviceAdditions.m */,
+				B4CA3D6E278F05E4004D0287 /* YKFNSMutableDataAdditions.h */,
+			);
+			path = Additions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,9 +711,51 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4CA3DA2278F05E4004D0287 /* YKFPermissions.m in Sources */,
+				B4CA3D7D278F05E4004D0287 /* MF_Base32Additions.m in Sources */,
+				B4CA3DA1278F05E4004D0287 /* YKFView.m in Sources */,
+				B4CA3D97278F05E4004D0287 /* YubiKitDeviceCapabilities.m in Sources */,
+				B4CA3D94278F05E4004D0287 /* YKFAccessoryConnectionController.m in Sources */,
 				B478E89827635FE800410E84 /* TokenSession.swift in Sources */,
+				B4CA3D92278F05E4004D0287 /* YKFAccessoryConnectionConfiguration.m in Sources */,
+				B4CA3D8C278F05E4004D0287 /* YKFOATHError.m in Sources */,
+				B4CA3D90278F05E4004D0287 /* YKFFIDO2Error.m in Sources */,
+				B4CA3D8D278F05E4004D0287 /* YKFPIVError.m in Sources */,
+				B4CA3DA8278F06EF004D0287 /* TKTokenAlgorithm+Extensions.swift in Sources */,
+				B4CA3D85278F05E4004D0287 /* YKFPIVPadding.m in Sources */,
+				B4CA3D7F278F05E4004D0287 /* YKFAPDU.m in Sources */,
+				B4CA3D9A278F05E4004D0287 /* TKTLVRecordAdditions.m in Sources */,
+				B4CA3DA3278F05E4004D0287 /* YubiKitManager.m in Sources */,
+				B4CA3D8F278F05E4004D0287 /* YKFChallengeResponseError.m in Sources */,
+				B4CA3DA4278F05E4004D0287 /* YubiKitLogger.m in Sources */,
+				B4CA3D95278F05E4004D0287 /* YKFAccessoryConnection+Debugging.m in Sources */,
+				B4CA3D98278F05E4004D0287 /* YKFDispatch.m in Sources */,
 				B478E89427635FE800410E84 /* Token.swift in Sources */,
+				B4CA3D89278F05E4004D0287 /* YKFSession.m in Sources */,
+				B4CA3D9B278F05E4004D0287 /* YKFNSMutableDataAdditions.m in Sources */,
+				B4CA3D99278F05E4004D0287 /* NSArray+TKTLVRecord.m in Sources */,
+				B4CA3D8A278F05E4004D0287 /* YKFAPDUError.m in Sources */,
+				B4CA3DA6278F0646004D0287 /* YubiKeyPIVSession.swift in Sources */,
+				B4CA3D9D278F05E4004D0287 /* YKFNSDataAdditions.m in Sources */,
+				B4CA3D88278F05E4004D0287 /* YKFPIVManagementKeyMetadata.m in Sources */,
 				B478E89627635FE800410E84 /* TokenDriver.swift in Sources */,
+				B4CA3D83278F05E4004D0287 /* YKFPIVSession.m in Sources */,
+				B4CA3D91278F05E4004D0287 /* YKFSmartCardInterface.m in Sources */,
+				B4CA3D96278F05E4004D0287 /* YKFAccessoryDescription.m in Sources */,
+				B4CA3D86278F05E4004D0287 /* YKFPIVSessionFeatures.m in Sources */,
+				B4CA3D93278F05E4004D0287 /* YKFAccessoryConnection.m in Sources */,
+				B4CA3D9E278F05E4004D0287 /* UIDeviceAdditions.m in Sources */,
+				B4CA3D80278F05E4004D0287 /* YKFSelectApplicationAPDU.m in Sources */,
+				B4CA3D8B278F05E4004D0287 /* YKFSessionError.m in Sources */,
+				B4CA3D9F278F05E4004D0287 /* YKFLogger.m in Sources */,
+				B4CA3D7E278F05E4004D0287 /* YKFFeature.m in Sources */,
+				B4CA3D81278F05E4004D0287 /* YKFVersion.m in Sources */,
+				B4CA3D84278F05E4004D0287 /* YKFPIVKeyType.m in Sources */,
+				B4CA3D8E278F05E4004D0287 /* YKFU2FError.m in Sources */,
+				B4CA3D82278F05E4004D0287 /* YKFRequest.m in Sources */,
+				B4CA3D9C278F05E4004D0287 /* YKFNSStringAdditions.m in Sources */,
+				B4CA3DA0278F05E4004D0287 /* YKFKVOObservation.m in Sources */,
+				B4CA3D87278F05E4004D0287 /* YKFPIVManagementKeyType.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +764,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B478E87E27627F7000410E84 /* YubiKeyConnection.swift in Sources */,
+				B42BC1EE2763BA2900216109 /* BrowserModel.swift in Sources */,
 				B478E88B2763548A00410E84 /* TokenCertificateStorage.swift in Sources */,
 				B478E8882762A70200410E84 /* Data+Extensions.swift in Sources */,
 				B48826D32762573D0008BCB1 /* BrowserView.swift in Sources */,
@@ -328,6 +808,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "TokenExtension/YubiKitLight/Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -355,6 +836,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "TokenExtension/YubiKitLight/Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
