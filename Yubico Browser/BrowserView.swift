@@ -8,43 +8,23 @@
 import SwiftUI
 import SafariServices
 import WebKit
+import Combine
 
 struct BrowserView: View {
     
     @State private var isShowingCertificatesView = false
     @State var url: URL?
+    @State var canGoBack = false
+    @State var canGoForward = false
+    private var didNavigate = PassthroughSubject<WebView.NavigateDirection, Never>()
     
     var body: some View {
-        VStack {
-            NavigationLink(destination: CertificatesView(), isActive: $isShowingCertificatesView) { EmptyView() }
-            WebView(url: url)
-            WebNavigationView(url: $url, isShowingCertificates: $isShowingCertificatesView)
+        VStack(spacing: 0) {
+            WebView(url: $url, canGoBack: $canGoBack, canGoForward: $canGoForward, navigate: didNavigate)
+            WebNavigationView(url: $url, canGoBack: $canGoBack, canGoForward: $canGoForward, isShowingCertificates: $isShowingCertificatesView, navigate: didNavigate)
         }
         .sheet(isPresented: $isShowingCertificatesView) {
             CertificatesView()
         }
-    }
-}
-
-
-struct WebView : UIViewRepresentable {
-    
-    let url: URL?
-    let browserModel = BrowserModel()
-    
-    func makeUIView(context: Context) -> WKWebView  {
-        return browserModel.webView
-    }
-    
-    func updateUIView(_ webView: WKWebView, context: Context) {
-        if let url = url {
-            webView.load(URLRequest(url: url))
-        }
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        BrowserView(url: nil)
     }
 }
