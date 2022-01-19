@@ -79,24 +79,9 @@ struct WebView: UIViewRepresentable {
                     return (item["tkid"] as? String)?.starts(with: "com.yubico.Yubico-Browser") ?? false
                 }
                 
-                let alert = UIAlertController(title: "Select certificate", message: nil, preferredStyle: .actionSheet)
-                items.forEach { item in
-                    guard let certData = item["certdata"] as? Data else { return }
-                    guard let certificate = SecCertificateCreateWithData(nil, certData as CFData) else { return }
-                    alert.addAction(UIAlertAction(title: certificate.commonName,
-                                                  style: .default,
-                                                  handler: { action in
-                        
-                        let secIdentity = item["v_Ref"] as! SecIdentity
-                        let urlCredential = URLCredential(identity: secIdentity, certificates: nil, persistence: .none)
-                        completionHandler(.useCredential, urlCredential)
-                    }))
-                }
-                alert.addAction(UIAlertAction(title: "Cancel", style: .cancel) { _ in
-                    completionHandler(.cancelAuthenticationChallenge, nil)
-                })
+                // Let user select which cert to use, handle pin entry and call the completion handler.
+                let alert = UIAlertController.selectCertAndPinEntryAlert(certs: items, completionHandler: completionHandler)
                 alert.show()
-                return
             case NSURLAuthenticationMethodServerTrust:
                 let credential = URLCredential(trust: challenge.protectionSpace.serverTrust!)
                 completionHandler(URLSession.AuthChallengeDisposition.useCredential, credential);
@@ -127,5 +112,44 @@ struct WebView: UIViewRepresentable {
         if let url = url {
             webView.load(URLRequest(url: url))
         }
+    }
+}
+
+
+extension UIAlertController {
+    static func selectCertAndPinEntryAlert(certs: [[String : Any]], completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) -> UIAlertController {
+        // Select cert UIAlertController.
+        let alert = UIAlertController(title: "Select certificate", message: nil, preferredStyle: .actionSheet)
+        certs.forEach { item in
+            guard let certData = item["certdata"] as? Data else { return }
+            guard let certificate = SecCertificateCreateWithData(nil, certData as CFData) else { return }
+            alert.addAction(UIAlertAction(title: certificate.commonName,
+                                          style: .default,
+                                          handler: { action in
+                // Pin entry UIAlertController created after the user selected one of the certs.
+                let passwordAlert = UIAlertController(title: "Enter pin", message: nil, preferredStyle: .alert)
+                passwordAlert.addTextField { textField in
+                    textField.isSecureTextEntry = true
+                }
+                passwordAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel) { _ in
+                    completionHandler(.cancelAuthenticationChallenge, nil)
+                })
+                passwordAlert.addAction(UIAlertAction(title: "Ok",
+                                                      style: .default,
+                                                      handler: { action in
+                    guard let pin = passwordAlert.textFields?.first?.text else { completionHandler(.cancelAuthenticationChallenge, nil); return }
+                    let secIdentity = item["v_Ref"] as! SecIdentity
+                    let urlCredential = URLCredential(identity: secIdentity, certificates: nil, persistence: .none)
+                    // If this doesn't return a UserDefaults something is broken in the project and we might as well crash.
+                    UserDefaults(suiteName: "group.com.yubico.browser")!.writePin(pin)
+                    completionHandler(.useCredential, urlCredential)
+                }))
+                passwordAlert.show()
+            }))
+        }
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel) { _ in
+            completionHandler(.cancelAuthenticationChallenge, nil)
+        })
+        return alert
     }
 }

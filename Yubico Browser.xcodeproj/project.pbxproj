@@ -10,6 +10,8 @@
 		B417C731279566E700753BC5 /* WebNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B417C730279566E700753BC5 /* WebNavigationView.swift */; };
 		B417C73D27973BD600753BC5 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B417C73C27973BD600753BC5 /* WebView.swift */; };
 		B417C73F27975A3200753BC5 /* UIAlertController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B417C73E27975A3200753BC5 /* UIAlertController+Extensions.swift */; };
+		B417C7412797FB5D00753BC5 /* UserDefaults+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B417C7402797FB5D00753BC5 /* UserDefaults+Extensions.swift */; };
+		B417C7422797FB5D00753BC5 /* UserDefaults+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B417C7402797FB5D00753BC5 /* UserDefaults+Extensions.swift */; };
 		B478E87E27627F7000410E84 /* YubiKeyConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B478E87D27627F7000410E84 /* YubiKeyConnection.swift */; };
 		B478E8802762A5F100410E84 /* SecCertificate+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B478E87F2762A5F100410E84 /* SecCertificate+Extensions.swift */; };
 		B478E8882762A70200410E84 /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B478E8872762A70200410E84 /* Data+Extensions.swift */; };
@@ -98,6 +100,7 @@
 		B417C730279566E700753BC5 /* WebNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebNavigationView.swift; sourceTree = "<group>"; };
 		B417C73C27973BD600753BC5 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		B417C73E27975A3200753BC5 /* UIAlertController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extensions.swift"; sourceTree = "<group>"; };
+		B417C7402797FB5D00753BC5 /* UserDefaults+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extensions.swift"; sourceTree = "<group>"; };
 		B478E87C27627C8B00410E84 /* Yubico-Browser-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Yubico-Browser-Info.plist"; sourceTree = SOURCE_ROOT; };
 		B478E87D27627F7000410E84 /* YubiKeyConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YubiKeyConnection.swift; sourceTree = "<group>"; };
 		B478E87F2762A5F100410E84 /* SecCertificate+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SecCertificate+Extensions.swift"; sourceTree = "<group>"; };
@@ -311,6 +314,7 @@
 				B48826E0276274070008BCB1 /* CertificatesModel.swift */,
 				B478E87D27627F7000410E84 /* YubiKeyConnection.swift */,
 				B478E88A2763548A00410E84 /* TokenCertificateStorage.swift */,
+				B417C7402797FB5D00753BC5 /* UserDefaults+Extensions.swift */,
 				B48826D42762573E0008BCB1 /* Assets.xcassets */,
 				B478E8892762A7B800410E84 /* Extensions */,
 				B48826D62762573E0008BCB1 /* Preview Content */,
@@ -747,6 +751,7 @@
 				B478E89627635FE800410E84 /* TokenDriver.swift in Sources */,
 				B4CA3D83278F05E4004D0287 /* YKFPIVSession.m in Sources */,
 				B4CA3D91278F05E4004D0287 /* YKFSmartCardInterface.m in Sources */,
+				B417C7422797FB5D00753BC5 /* UserDefaults+Extensions.swift in Sources */,
 				B4CA3D96278F05E4004D0287 /* YKFAccessoryDescription.m in Sources */,
 				B4CA3D86278F05E4004D0287 /* YKFPIVSessionFeatures.m in Sources */,
 				B4CA3D93278F05E4004D0287 /* YKFAccessoryConnection.m in Sources */,
@@ -779,6 +784,7 @@
 				B48826DF276261070008BCB1 /* CertificatesView.swift in Sources */,
 				B48826D12762573D0008BCB1 /* YubicoBrowserApp.swift in Sources */,
 				B478E8802762A5F100410E84 /* SecCertificate+Extensions.swift in Sources */,
+				B417C7412797FB5D00753BC5 /* UserDefaults+Extensions.swift in Sources */,
 				B417C73D27973BD600753BC5 /* WebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

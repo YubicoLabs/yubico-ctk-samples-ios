@@ -70,13 +70,16 @@ struct WebNavigationView: View {
         .padding([.leading, .trailing], 20)
         .background(Color(.secondarySystemBackground))
         .onChange(of: url) { url in
-            urlString = url?.absoluteString ?? ""
         }
     }
 }
 
-//struct WebNavigationView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        WebNavigationView(url: .constant(URL(string: "https://foo.com/")), canGoBack: .constant(false), isShowingCertificates: .constant(false))
-//    }
-//}
+struct WebNavigationView_Previews: PreviewProvider {
+    static var previews: some View {
+        WebNavigationView(url: .constant(URL(string: "https://foo.com/")),
+                          canGoBack: .constant(true),
+                          canGoForward: .constant(false),
+                          isShowingCertificates: .constant(false),
+                          navigate: PassthroughSubject<WebView.NavigateDirection, Never>())
+    }
+}

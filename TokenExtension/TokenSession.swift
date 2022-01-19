@@ -7,8 +7,6 @@
 
 import CryptoTokenKit
 
-extension String: Error {}
-
 class TokenSession: TKTokenSession, TKTokenSessionDelegate {
     
     // These cases match the YKFPIVKeyType in the SDK
@@ -51,19 +49,17 @@ class TokenSession: TKTokenSession, TKTokenSessionDelegate {
             }
         }
         
-        
         guard let keyType = possibleKeyType, let secKeyAlgorithm = algorithm.secKeyAlgorithm else {
             throw NSError(domain: TKErrorDomain, code: TKError.Code.canceledByUser.rawValue, userInfo: nil)
         }
         
-        let pin = "123456"
-        if YubiKeyPIVSession.shared.yubiKeyConnected {
-            if let signedData = YubiKeyPIVSession.shared.sign(objectId: objectId, type: keyType, algorithm: secKeyAlgorithm, message: dataToSign, password: pin) {
-                YubiKeyPIVSession.shared.stop()
-                return signedData
+        if let pin = try? UserDefaults(suiteName: "group.com.yubico.browser")!.readPin() {
+            if YubiKeyPIVSession.shared.yubiKeyConnected {
+                if let signedData = YubiKeyPIVSession.shared.sign(objectId: objectId, type: keyType, algorithm: secKeyAlgorithm, message: dataToSign, password: pin) {
+                    YubiKeyPIVSession.shared.stop()
+                    return signedData
+                }
             }
-        } else {
-            
         }
         
         throw NSError(domain: TKErrorDomain, code: TKError.Code.authenticationFailed.rawValue, userInfo: nil)
