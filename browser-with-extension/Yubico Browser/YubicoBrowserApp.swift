@@ -11,7 +11,7 @@ import SwiftUI
 struct YubicoBrowserApp: App {
     var body: some Scene {
         WindowGroup {
-            BrowserView()
+            ContentView()
         }
     }
 }

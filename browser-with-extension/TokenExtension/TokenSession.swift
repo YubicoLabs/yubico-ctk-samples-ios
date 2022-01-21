@@ -9,7 +9,7 @@ import CryptoTokenKit
 
 class TokenSession: TKTokenSession, TKTokenSessionDelegate {
     
-    // These cases match the YKFPIVKeyType in the SDK
+    // These cases match the YKFPIVKeyType in the YubiKit SDK
     enum KeyType: UInt8 {
         case rsa1024 = 0x06
         case rsa2048 = 0x07
@@ -63,35 +63,5 @@ class TokenSession: TKTokenSession, TKTokenSessionDelegate {
         }
         
         throw NSError(domain: TKErrorDomain, code: TKError.Code.authenticationFailed.rawValue, userInfo: nil)
-    }
-    
-    func tokenSession(_ session: TKTokenSession, decrypt ciphertext: Data, keyObjectID: Any, algorithm: TKTokenKeyAlgorithm) throws -> Data {
-        var plaintext: Data?
-        
-        // Insert code here to decrypt the ciphertext using the specified key and algorithm.
-        plaintext = nil
-        
-        if let plaintext = plaintext {
-            return plaintext
-        } else {
-            // If the operation failed for some reason, fill in an appropriate error like objectNotFound, corruptedData, etc.
-            // Note that responding with TKErrorCodeAuthenticationNeeded will trigger user authentication after which the current operation will be re-attempted.
-            throw NSError(domain: TKErrorDomain, code: TKError.Code.authenticationNeeded.rawValue, userInfo: nil)
-        }
-    }
-    
-    func tokenSession(_ session: TKTokenSession, performKeyExchange otherPartyPublicKeyData: Data, keyObjectID objectID: Any, algorithm: TKTokenKeyAlgorithm, parameters: TKTokenKeyExchangeParameters) throws -> Data {
-        var secret: Data?
-        
-        // Insert code here to perform Diffie-Hellman style key exchange.
-        secret = nil
-        
-        if let secret = secret {
-            return secret
-        } else {
-            // If the operation failed for some reason, fill in an appropriate error like objectNotFound, corruptedData, etc.
-            // Note that responding with TKErrorCodeAuthenticationNeeded will trigger user authentication after which the current operation will be re-attempted.
-            throw NSError(domain: TKErrorDomain, code: TKError.Code.authenticationNeeded.rawValue, userInfo: nil)
-        }
     }
 }

@@ -1,5 +1,5 @@
 //
-//  BrowserView.swift
+//  ContentView.swift
 //  Yubico Browser
 //
 //  Created by Jens Utbult on 2021-12-09.
@@ -10,7 +10,7 @@ import SafariServices
 import WebKit
 import Combine
 
-struct BrowserView: View {
+struct ContentView: View {
     
     @State private var isShowingCertificatesView = false
     @State var url: URL?

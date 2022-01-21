@@ -22,7 +22,7 @@
 		B478E89827635FE800410E84 /* TokenSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = B478E89727635FE800410E84 /* TokenSession.swift */; };
 		B478E89C27635FE800410E84 /* TokenExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B478E89027635FE800410E84 /* TokenExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B48826D12762573D0008BCB1 /* YubicoBrowserApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48826D02762573D0008BCB1 /* YubicoBrowserApp.swift */; };
-		B48826D32762573D0008BCB1 /* BrowserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48826D22762573D0008BCB1 /* BrowserView.swift */; };
+		B48826D32762573D0008BCB1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48826D22762573D0008BCB1 /* ContentView.swift */; };
 		B48826D52762573E0008BCB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B48826D42762573E0008BCB1 /* Assets.xcassets */; };
 		B48826D82762573E0008BCB1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B48826D72762573E0008BCB1 /* Preview Assets.xcassets */; };
 		B48826DF276261070008BCB1 /* CertificatesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48826DE276261070008BCB1 /* CertificatesView.swift */; };
@@ -101,6 +101,7 @@
 		B417C73C27973BD600753BC5 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		B417C73E27975A3200753BC5 /* UIAlertController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extensions.swift"; sourceTree = "<group>"; };
 		B417C7402797FB5D00753BC5 /* UserDefaults+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extensions.swift"; sourceTree = "<group>"; };
+		B417C76F279AF96500753BC5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B478E87C27627C8B00410E84 /* Yubico-Browser-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Yubico-Browser-Info.plist"; sourceTree = SOURCE_ROOT; };
 		B478E87D27627F7000410E84 /* YubiKeyConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YubiKeyConnection.swift; sourceTree = "<group>"; };
 		B478E87F2762A5F100410E84 /* SecCertificate+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SecCertificate+Extensions.swift"; sourceTree = "<group>"; };
@@ -116,7 +117,7 @@
 		B478E8A12763638E00410E84 /* TokenExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TokenExtension.entitlements; sourceTree = "<group>"; };
 		B48826CD2762573D0008BCB1 /* Yubico Browser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Yubico Browser.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B48826D02762573D0008BCB1 /* YubicoBrowserApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YubicoBrowserApp.swift; sourceTree = "<group>"; };
-		B48826D22762573D0008BCB1 /* BrowserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserView.swift; sourceTree = "<group>"; };
+		B48826D22762573D0008BCB1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B48826D42762573E0008BCB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B48826D72762573E0008BCB1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B48826DE276261070008BCB1 /* CertificatesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificatesView.swift; sourceTree = "<group>"; };
@@ -285,6 +286,7 @@
 		B48826C42762573D0008BCB1 = {
 			isa = PBXGroup;
 			children = (
+				B417C76F279AF96500753BC5 /* README.md */,
 				B48826CF2762573D0008BCB1 /* Yubico Browser */,
 				B478E89227635FE800410E84 /* TokenExtension */,
 				B48826CE2762573D0008BCB1 /* Products */,
@@ -307,7 +309,7 @@
 				B478E87C27627C8B00410E84 /* Yubico-Browser-Info.plist */,
 				B48826E527627A960008BCB1 /* Yubico Browser.entitlements */,
 				B48826D02762573D0008BCB1 /* YubicoBrowserApp.swift */,
-				B48826D22762573D0008BCB1 /* BrowserView.swift */,
+				B48826D22762573D0008BCB1 /* ContentView.swift */,
 				B417C73C27973BD600753BC5 /* WebView.swift */,
 				B417C730279566E700753BC5 /* WebNavigationView.swift */,
 				B48826DE276261070008BCB1 /* CertificatesView.swift */,
@@ -778,7 +780,7 @@
 				B478E88B2763548A00410E84 /* TokenCertificateStorage.swift in Sources */,
 				B478E8882762A70200410E84 /* Data+Extensions.swift in Sources */,
 				B417C73F27975A3200753BC5 /* UIAlertController+Extensions.swift in Sources */,
-				B48826D32762573D0008BCB1 /* BrowserView.swift in Sources */,
+				B48826D32762573D0008BCB1 /* ContentView.swift in Sources */,
 				B417C731279566E700753BC5 /* WebNavigationView.swift in Sources */,
 				B48826E1276274070008BCB1 /* CertificatesModel.swift in Sources */,
 				B48826DF276261070008BCB1 /* CertificatesView.swift in Sources */,
