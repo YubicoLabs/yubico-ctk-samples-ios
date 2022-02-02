@@ -6,4 +6,4 @@ A CryptoTokenKit extension allows an app to store the public parts of a certific
 
 ## TERMS & CONDITIONS
 
-The Android Browser <insert project name here> project is intended for use in development and as reference material to building your own production environments, pursuant to Yubico’s terms and conditions. By downloading and installing the software, you agree to the Yubico Toolset Software License Agreement located at https://www.yubico.com/support/terms-conditions/yubico-toolset-software-license-agreement/
+The Yubico iOS Browser project is intended for use in development and as reference material to building your own production environments, pursuant to Yubico’s terms and conditions. By downloading and installing the software, you agree to the Yubico Toolset Software License Agreement located at https://www.yubico.com/support/terms-conditions/yubico-toolset-software-license-agreement/
