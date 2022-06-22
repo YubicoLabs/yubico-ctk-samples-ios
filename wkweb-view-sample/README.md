@@ -1,4 +1,4 @@
-#  Yubico Browser
+#  Yubico WKWebView sample
 
 This sample app demonstrates how to use the PIV/CryptoTokenKit functionality provided by the Yubico Authenticator app from a `WKWebView`. The CryptoTokenKit extension implemented in the Yubico Authenticator will let a user store the public parts of a certificate on their iPhone. The certificate will then be available to Safari, Mail and other apps that has implemented support for CTK extensions. If for example Safari wants to sign a auth request, iOS will ask the user which certificate to use and will then open the app that stored that specific certificate and ask it to sign the request.
 
